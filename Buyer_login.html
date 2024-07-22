@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <title>Buyer Login</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300  flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Buyer Login</h2>
+        <form method="POST" action="http://localhost/INTERNSHIP_PROJECT/login.php">
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="buyer-email">Email</label>
+                <input type="email" name="email" id="buyer-email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Email">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="buyer-password">Password</label>
+                <input type="password" name="password" id="buyer-password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Password">
+            </div>
+            <input type="hidden" name="role" value="buyer">
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Login
+                </button>
+            </div>
+        </form>
+        <p class="text-center text-gray-600 mt-4">Don't have an account? <a href="#" class="text-blue-500 hover:text-blue-700">Sign up</a></p>
+    </div>
+</body>
+</html>
